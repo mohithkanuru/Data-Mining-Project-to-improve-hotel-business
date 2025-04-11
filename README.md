@@ -69,9 +69,9 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 
 ### Clustering and Customer Segmentation
 
-- **Guest Segmentation**:
-- **Pricing Strategy**:
-- **Booking Behaviour Patterns**: 
+- **Guest Segmentation**
+- **Pricing Strategy**
+- **Booking Behaviour Patterns** 
 
 
 ## Conclusion
