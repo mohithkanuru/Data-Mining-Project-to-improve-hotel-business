@@ -69,10 +69,10 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 
 ### Clustering and Customer Segmentation
 
-- **Cluster Profiles**:
-  - Business travelers: Short stays, high frequency, prone to cancel if lead time is long.
-  - Vacationers: Long stays, book early, likely to leave positive reviews.
-- **Actionable Segmentation**: Design tailored experiences and offers for each cluster (e.g., express check-in for business travelers).
+- **Guest Segmentation**:
+- **Pricing Strategy**:
+- **Booking Behaviour Patterns**: 
+
 
 ## Conclusion
 
