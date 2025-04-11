@@ -1,132 +1,79 @@
-# Data-Mining-Project-to-improve-hotel-business
+# Using Data Mining to Improve Hotel Business
 
-## Using Data Mining to Improve Hotel Business
+## Overview
 
-### Course
-CSL-515 Data Mining and Warehousing
+This project was undertaken as part of the CSL-515: Data Mining and Warehousing course under the guidance of Prof. Durga Toshniwal. The goal is to utilize data mining techniques to gain insights into hotel booking behavior and customer reviews to ultimately improve hotel business operations and customer satisfaction.
 
-### Instructor
-Prof. Durga Toshniwal
+## Team Members
 
-### Team Members
-- Varre Tejaswini  
-- Uppala Vivek Narayan  
-- Male Jithendra  
-- Chiranjan Kumarr K S  
-- Sapavath Yashwanth Krishna Naik  
-- Kanuru Mohith Kumar Reddy  
+- Varre Tejaswini (21114002)
+- Uppala Vivek Narayan (21114035)
+- Male Jithendra (21114049)
+- Chiranjan Kumarr K S (21114054)
+- Sapavath Yashwanth Krishna Naik (21114064)
+- Kanuru Mohith Kumar Reddy (21114047)
 
----
+## Datasets Used
 
-## Project Overview
+1. **Hotel Booking Dataset** – Contains records of hotel reservations with features such as lead time, customer type, market segment, booking status, and more.
+2. **TripAdvisor Reviews Dataset** – Contains customer reviews and ratings for hotels, used for sentiment analysis.
 
-This project applies data mining techniques to improve business strategies in the hotel industry by analyzing booking and review data.
-
-We worked with two datasets:
-- **Hotel Booking Dataset** – Contains booking details such as customer type, booking dates, and lead time.
-- **TripAdvisor Reviews Dataset** – Contains user reviews and ratings for hotels in India.
-
----
-
-## Objectives
-
-- Perform exploratory data analysis (EDA) to understand trends in bookings and cancellations.
-- Use clustering to identify customer segments and behavior.
-- Apply association rule mining to detect frequently co-occurring booking features.
-- Conduct sentiment analysis on reviews to extract customer opinions.
-
----
-
-## Project Structure
-
-```
-.
-├── data/
-│   ├── hotel_booking.csv
-│   └── tripadvisor_reviews.csv
-│
-├── notebooks/
-│   ├── eda_hotel_bookings.ipynb
-│   ├── clustering_analysis.ipynb
-│   ├── association_rule_mining.ipynb
-│   └── sentiment_analysis.ipynb
-│
-├── src/
-│   ├── preprocess.py
-│   ├── sentiment_utils.py
-│   └── clustering_utils.py
-│
-├── results/
-│   ├── visualizations/
-│   ├── cluster_reports/
-│   └── sentiment_outputs/
-│
-└── README.md
-```
-
----
-
-## Techniques Used
+## Methodology
 
 ### Data Preprocessing
-- Handling missing values
-- Encoding categorical variables
-- Feature selection
+- Removed null and duplicate entries.
+- Normalized and encoded categorical variables.
+- Merged datasets wherever necessary for enhanced analysis.
 
 ### Exploratory Data Analysis (EDA)
-- Visualizations using Matplotlib, Seaborn, and Plotly
+- Analyzed booking trends by month, country, and hotel type.
+- Investigated cancellation patterns and their relation to lead time, customer type, etc.
+- Explored the impact of special requests, repeated guests, and distribution channels.
 
-### Clustering
-- K-Means clustering
-- Elbow Method and Silhouette Score for optimal `k`
+### Clustering and Segmentation
+- Applied KMeans clustering to segment customers based on their booking behaviors.
+- Identified patterns in cluster profiles such as business vs leisure travelers.
 
 ### Association Rule Mining
-- Apriori algorithm to discover frequent itemsets and rules
+- Extracted frequent patterns and itemsets to find relationships between features like special requests, room type, and cancellations.
 
 ### Sentiment Analysis
-- TextBlob and VADER for polarity and sentiment classification
+- Cleaned and preprocessed review texts.
+- Performed sentiment classification using Vader and TextBlob.
+- Analyzed common words, emotions, and review distributions across ratings.
 
----
+## Insights from the Analysis
 
-## Key Insights
+### Booking Behavior
 
-- Customer type, lead time, and prior cancellations are strong indicators of booking cancellations.
-- Clustering revealed distinct customer profiles, such as business travelers and families.
-- Association rules highlighted factors such as lack of parking being associated with low ratings.
-- Sentiment analysis indicated customer sentiment around staff, cleanliness, and service.
+- **Customer Preferences**: Different nationalities and market segments exhibit distinct booking habits. City hotels are favored by international travelers while resort hotels attract domestic tourists.
+- **Lead Time Analysis**: Longer lead times often correlate with higher cancellation rates. Hotels can tailor cancellation policies or reminders accordingly.
+- **Loyal Customers**: Repeat guests have higher stay durations and lower cancellation rates, emphasizing the value of loyalty programs.
 
----
+### Impact of Cancellations
 
-## Contributions
+- **Cancellation Rates**: A noticeable number of bookings are canceled, particularly those made online or far in advance. This affects revenue and planning.
+- **Temporal Variation**: Cancellations vary with season and month. High cancellation rates in off-seasons offer room for flexible pricing strategies.
 
-- **Kanuru Mohith Kumar Reddy** – Data exploration, sentiment analysis  
-- **Varre Tejaswini** – Clustering and customer segmentation  
-- **Uppala Vivek Narayan** – Association rule mining  
-- **Male Jithendra** – Data cleaning and preprocessing  
-- **Chiranjan Kumarr K S** – Visualization and reporting  
-- **Sapavath Yashwanth Krishna Naik** – Model evaluation and final presentation
+### Sentiment Analysis of Reviews
 
----
+- **Positive Sentiments**: Guests appreciated hotel location, cleanliness, and friendly staff.
+- **Negative Sentiments**: Complaints centered around slow service, room readiness, and check-in delays.
+- **Emotional Cues**: Emotions like joy and trust were dominant in positive reviews, while anger and sadness surfaced in negative ones.
 
-## Tools and Libraries
+### Service Recommendations and Business Improvements
 
-- Python (Pandas, NumPy)
-- Matplotlib, Seaborn, Plotly
-- Scikit-learn
-- TextBlob, VADER (NLTK)
-- mlxtend (for association rule mining)
-- Jupyter Notebooks
+- **Targeted Offers**: Personalized deals based on customer segment and booking channel can improve conversion rates.
+- **Overbooking Strategy**: Data-driven overbooking in low-risk segments during peak seasons can minimize lost revenue.
+- **Operational Focus**: Investing in staff training and front-desk efficiency can address common review concerns.
 
----
+### Clustering and Customer Segmentation
 
-## Future Work
+- **Cluster Profiles**:
+  - Business travelers: Short stays, high frequency, prone to cancel if lead time is long.
+  - Vacationers: Long stays, book early, likely to leave positive reviews.
+- **Actionable Segmentation**: Design tailored experiences and offers for each cluster (e.g., express check-in for business travelers).
 
-- Incorporate pricing and star rating analysis.
-- Apply deep learning models like BERT for improved sentiment classification.
-- Develop a real-time dashboard for hotel managers.
+## Conclusion
 
----
-
-## License
-
-This project is developed for academic use under the CSL-515 course. Datasets are used solely for educational and research purposes.
+This project highlights how data mining techniques such as clustering, association rule mining, and sentiment analysis can be used effectively to understand customer behavior and enhance hotel business strategies. These insights can help hotels in targeted marketing, service improvements, and operational efficiency.
