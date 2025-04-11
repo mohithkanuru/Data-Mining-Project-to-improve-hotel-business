@@ -37,33 +37,6 @@ We worked with two datasets:
 
 ---
 
-## Project Structure
-
-```
-.
-├── data/
-│   ├── hotel_booking.csv
-│   └── tripadvisor_reviews.csv
-│
-├── notebooks/
-│   ├── eda_hotel_bookings.ipynb
-│   ├── clustering_analysis.ipynb
-│   ├── association_rule_mining.ipynb
-│   └── sentiment_analysis.ipynb
-│
-├── src/
-│   ├── preprocess.py
-│   ├── sentiment_utils.py
-│   └── clustering_utils.py
-│
-├── results/
-│   ├── visualizations/
-│   ├── cluster_reports/
-│   └── sentiment_outputs/
-│
-└── README.md
-```
-
 ---
 
 ## Techniques Used
