@@ -10,7 +10,7 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 - Uppala Vivek Narayan (21114035)
 - Male Jithendra (21114049)
 - Chiranjan Kumarr K S (21114054)
-- Sapavath Yashwanth Krishna Naik (21114064)
+- Sapavath Yashwanth Krishna Naik (21114093)
 - Kanuru Mohith Kumar Reddy (21114047)
 
 ## Datasets Used
