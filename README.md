@@ -9,14 +9,14 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 - Varre Tejaswini (21114002)
 - Uppala Vivek Narayan (21114035)
 - Male Jithendra (21114049)
-- Chiranjan Kumarr K S (21114054)
+- Chiranjan Kumarr K S (21114033)
 - Sapavath Yashwanth Krishna Naik (21114093)
 - Kanuru Mohith Kumar Reddy (21114047)
 
 ## Datasets Used
 
 1. **Hotel Booking Dataset** – Contains records of hotel reservations with features such as lead time, customer type, market segment, booking status, and more.
-2. **TripAdvisor Reviews Dataset** – Contains customer reviews and ratings for hotels, used for sentiment analysis.
+2. **TripAdvisor Reviews Dataset** – Contains customer reviews and ratings for hotels, used for classification tasks (sentiment analysis and rating prediction).
 
 ## Methodology
 
@@ -37,10 +37,11 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 ### Association Rule Mining
 - Extracted frequent patterns and itemsets to find relationships between features like special requests, room type, and cancellations.
 
-### Sentiment Analysis
-- Cleaned and preprocessed review texts.
-- Performed sentiment classification using Vader and TextBlob.
-- Analyzed common words, emotions, and review distributions across ratings.
+### Sentiment Analysis and Rating Prediction
+- Data Prep: Cleaned and labeled review data, then split into train, val, and test sets.
+- Modeling: Fine-tuned a pretrained transformer (e.g., DistilBERT) for sentiment and rating prediction.
+- Training: Used Hugging Face Trainer with GPU, mixed-precision, and learning rate scheduling.
+- Evaluation: Logged detailed metrics (accuracy, precision, recall, F1) after each epoch.
 
 ## Insights from the Analysis
 
