@@ -6,9 +6,9 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 
 ## Team Members
 
-- Varre Tejaswini (21114002)
-- Uppala Vivek Narayan (21114035)
-- Male Jithendra (21114049)
+- Varre Tejaswini (21114109)
+- Uppala Vivek Narayan (21114108)
+- Male Jithendra (21114055)
 - Chiranjan Kumarr K S (21114033)
 - Sapavath Yashwanth Krishna Naik (21114093)
 - Kanuru Mohith Kumar Reddy (21114047)
@@ -70,9 +70,17 @@ This project was undertaken as part of the CSL-515: Data Mining and Warehousing 
 
 ### Clustering and Customer Segmentation
 
-- **Guest Segmentation**
-- **Pricing Strategy**
-- **Booking Behaviour Patterns** 
+- **Guest Segmentation**:
+  Helps hotels send the right messages and offers to different types of guests.
+  Improves planning by assigning suitable rooms and services based on guest needs.
+
+- **Pricing Strategy**:
+  Allows flexible pricing by understanding how much each guest type is willing to pay.
+  Helps offer the right deals like discounts or premium packages to the right guests.
+
+- **Booking Behaviour Patterns**:
+  Lets hotels reduce cancellations and no-shows with smart reminders and options.
+  Boosts bookings and guest satisfaction through timely, personalized offers.
 
 
 ## Conclusion
